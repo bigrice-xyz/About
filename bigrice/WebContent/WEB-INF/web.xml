@@ -4,4 +4,15 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
+  
+  	<!-- 微信网关 -->
+  	<servlet>
+		<servlet-name>WXGateway</servlet-name>
+		<servlet-class>xyz.bigrice.wx.Gateway</servlet-class>
+    </servlet>
+
+	<servlet-mapping>
+	    <servlet-name>WXGateway</servlet-name>
+	    <url-pattern>/wx/gw</url-pattern>    
+	</servlet-mapping>
 </web-app>
